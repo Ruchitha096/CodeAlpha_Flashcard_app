@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Flashcard Quiz App</h1>
+    <div class="card" id="flashcard">
+      <div class="card-inner" id="cardInner">
+        <div class="card-front" id="cardFront">Question</div>
+        <div class="card-back" id="cardBack">Answer</div>
+      </div>
+    </div>
+    <button onclick="flipCard()">🔄 Show Answer</button>
+    <div class="controls">
+      <button onclick="prevCard()">⬅️ Previous</button>
+      <button onclick="nextCard()">➡️ Next</button>
+    </div>
+    <div class="edit-section">
+      <input type="text" id="newQuestion" placeholder="Enter question" />
+      <input type="text" id="newAnswer" placeholder="Enter answer" />
+      <button onclick="addCard()">➕ Add</button>
+      <button onclick="editCard()">✏️ Edit</button>
+      <button onclick="deleteCard()">🗑️ Delete</button>
+    </div>
+  </div>
+</body>
+</html>
